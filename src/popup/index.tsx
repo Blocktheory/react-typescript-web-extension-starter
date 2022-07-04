@@ -1,11 +1,11 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
-import browser from "webextension-polyfill";
+import ReactDOM from "react-dom/client";
 import { Popup } from "./component";
 import "../css/app.css";
+import React from "react";
 
 // // // //
-
-browser.tabs.query({ active: true, currentWindow: true }).then(() => {
-    ReactDOM.render(<Popup />, document.getElementById("popup"));
-});
+ReactDOM.createRoot(document.getElementById("root")!).render(
+    <React.StrictMode>
+        <Popup />
+    </React.StrictMode>
+);

@@ -2,10 +2,15 @@
 <html>
     <head>
         <title>Chrome Extension (built with TypeScript + React)</title>
-        <script src="js/popup.js"></script>
+      <script type="module" crossorigin src="/assets/app.js"></script>
+      <link rel="modulepreload" href="/assets/browser-polyfill.f4591fc4.js">
+      <link rel="stylesheet" href="/assets/app.f2543864.css">
     </head>
 
     <body>
-        <div id="popup"></div>
+        <body>
+            <div id="root"></div>
+            
+        </body>
     </body>
 </html>

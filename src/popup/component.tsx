@@ -1,7 +1,7 @@
 import React from "react";
-import { Hello } from "@src/components/hello";
+import { Hello } from "../components/hello";
 import browser, { Tabs } from "webextension-polyfill";
-import { Scroller } from "@src/components/scroller";
+import { Scroller } from "../components/scroller";
 import css from "./styles.module.css";
 
 // // // //
