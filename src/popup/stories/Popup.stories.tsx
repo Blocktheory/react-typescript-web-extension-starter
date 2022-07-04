@@ -1,6 +1,7 @@
-import * as React from "react";
-import { Popup } from "../component";
 import { ComponentMeta } from "@storybook/react";
+import * as React from "react";
+
+import { Popup } from "../component";
 
 // // // //
 

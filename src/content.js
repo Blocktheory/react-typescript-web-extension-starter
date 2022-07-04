@@ -1,6 +1,5 @@
-
 try {
-    console.log("content loaded", browser.commands);
+    console.log("content loaded");
 } catch (e) {
     console.error(e);
 }

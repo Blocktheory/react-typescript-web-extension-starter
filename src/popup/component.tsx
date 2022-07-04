@@ -1,6 +1,7 @@
 import React from "react";
-import { Hello } from "../components/hello";
 import browser, { Tabs } from "webextension-polyfill";
+
+import { Hello } from "../components/hello";
 import { Scroller } from "../components/scroller";
 import css from "./styles.module.css";
 
@@ -11,7 +12,7 @@ const scrollToTopPosition = 0;
 const scrollToBottomPosition = 9999999;
 
 function scrollWindow(position: number) {
-  window.scroll(0,position);
+    window.scroll(0, position);
 }
 
 /**
@@ -20,31 +21,29 @@ function scrollWindow(position: number) {
  */
 function executeScript(position: number): void {
     // Query for the active tab in the current window
-    browser.tabs
-        .query({ active: true, currentWindow: true })
-        .then((tabs: Tabs.Tab[]) => {
-            // Pulls current tab from browser.tabs.query response
-            const currentTab: Tabs.Tab | number = tabs[0];
+    browser.tabs.query({ active: true, currentWindow: true }).then((tabs: Tabs.Tab[]) => {
+        // Pulls current tab from browser.tabs.query response
+        const currentTab: Tabs.Tab | number = tabs[0];
 
-            // Short circuits function execution is current tab isn't found
-            if (!currentTab) {
-                return;
-            }
-            const currentTabId: number = currentTab.id as number;
+        // Short circuits function execution is current tab isn't found
+        if (!currentTab) {
+            return;
+        }
+        const currentTabId: number = currentTab.id as number;
 
-            // Executes the script in the current tab
-            browser.scripting
-                .executeScript({
-                    target: {
-                        tabId: currentTabId
-                    },
-                    func: scrollWindow,
-                    args: [position]
-                })
-                .then(() => {
-                    console.log("Done Scrolling");
-                });
-        });
+        // Executes the script in the current tab
+        browser.scripting
+            .executeScript({
+                target: {
+                    tabId: currentTabId,
+                },
+                func: scrollWindow,
+                args: [position],
+            })
+            .then(() => {
+                console.log("Done Scrolling");
+            });
+    });
 }
 
 // // // //

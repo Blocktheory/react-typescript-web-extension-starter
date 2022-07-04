@@ -1,8 +1,9 @@
-import * as React from "react";
-import { Scroller } from "../component";
-import { ComponentMeta, ComponentStory } from "@storybook/react";
-import { within, userEvent } from "@storybook/testing-library";
 import { action } from "@storybook/addon-actions";
+import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { userEvent, within } from "@storybook/testing-library";
+import * as React from "react";
+
+import { Scroller } from "../component";
 
 // // // //
 
@@ -15,9 +16,7 @@ export default {
     },
 } as ComponentMeta<typeof Scroller>;
 
-const Template: ComponentStory<typeof Scroller> = (args) => (
-    <Scroller {...args} />
-);
+const Template: ComponentStory<typeof Scroller> = (args) => <Scroller {...args} />;
 
 // // // //
 

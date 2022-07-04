@@ -2,11 +2,7 @@
     "compilerOptions": {
         "target": "ESNext",
         "useDefineForClassFields": true,
-        "lib": [
-            "DOM",
-            "DOM.Iterable",
-            "ESNext"
-        ],
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
         "allowJs": false,
         "skipLibCheck": true,
         "esModuleInterop": false,
@@ -20,9 +16,7 @@
         "noEmit": true,
         "jsx": "react-jsx"
     },
-    "include": [
-        "src", "typings.d.ts"
-    ],
+    "include": ["src", "typings.d.ts"],
     "references": [
         {
             "path": "./tsconfig.node.json"
@@ -30,23 +24,23 @@
     ]
 }
 
-    // {
-    //     "compilerOptions": {
-    //         "baseUrl": "./",
-    //         "paths": {
-    //             "@src/*": ["src/*"]
-    //         },
-    //         "target": "es5",
-    //         "module": "commonjs",
-    //         "moduleResolution": "node",
-    //         "rootDir": "./src",
-    //         "outDir": "dist/js",
-    //         "strict": true,
-    //         "sourceMap": true,
-    //         "jsx": "react",
-    //         "esModuleInterop": true,
-    //         "lib": ["es2015", "dom"],
-    //         "experimentalDecorators": true,
-    //         "allowSyntheticDefaultImports": true
-    //     }
-    // }
+// {
+//     "compilerOptions": {
+//         "baseUrl": "./",
+//         "paths": {
+//             "@src/*": ["src/*"]
+//         },
+//         "target": "es5",
+//         "module": "commonjs",
+//         "moduleResolution": "node",
+//         "rootDir": "./src",
+//         "outDir": "dist/js",
+//         "strict": true,
+//         "sourceMap": true,
+//         "jsx": "react",
+//         "esModuleInterop": true,
+//         "lib": ["es2015", "dom"],
+//         "experimentalDecorators": true,
+//         "allowSyntheticDefaultImports": true
+//     }
+// }
