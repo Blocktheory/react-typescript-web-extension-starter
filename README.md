@@ -88,8 +88,7 @@ In [Microsoft Edge](https://www.microsoft.com/en-us/edge), open up [edge://exten
 -   [Eslint](https://eslint.org/)
 -   [Prettier](https://prettier.io/)
 -   [Vite](https://vitejs.dev/)
--   [TailwindCSS](https://tailwindcss.com/)
--   [webextension-polyfill]https://github.com/mozilla/webextension-polyfill)
+-   [webextension-polyfill](https://github.com/mozilla/webextension-polyfill)
 
 **Misc. References**
 
