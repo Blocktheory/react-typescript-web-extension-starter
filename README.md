@@ -5,11 +5,11 @@
 [![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 [![HitCount](https://hits.dwyl.com/DesignString/react-typescript-web-extension-starter.svg?style=flat-square&show=unique)](http://hits.dwyl.com/DesignString/react-typescript-web-extension-starter)
 
-![React TypeScript Web Extension Starter](https://imgur.com/lYaoyIV)
+![React TypeScript Web Extension Starter](https://i.imgur.com/lYaoyIV.png)
 
 :desktop_computer: A Web Extension starter kit built with React, TypeScript, Storybook, EsLint, Prettier, Jest, TailwindCSS, &amp; Vite. Compatible with Google Chrome, Mozilla Firefox, Brave, and Microsoft Edge.
 
-![Example Extension Popup](https://imgur.com/a/jfsfasN "Example Extension Popup")
+![Example Extension Popup](https://i.imgur.com/WTgxCDX.png "Example Extension Popup")
 
 **Getting Started**
 
