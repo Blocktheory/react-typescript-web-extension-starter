@@ -69,8 +69,6 @@ In [Microsoft Edge](https://www.microsoft.com/en-us/edge), open up [edge://exten
 
 -   Includes ESLint configured to work with TypeScript and Prettier.
 
--   Includes tests with Jest - note that the `babel.config.js` and associated dependencies are only necessary for Jest to work with TypeScript.
-
 -   Recommended to use `Visual Studio Code` with the `Format on Save` setting turned on.
 
 -   Example icons courtesy of [Heroicons](https://heroicons.com/).
@@ -79,7 +77,7 @@ In [Microsoft Edge](https://www.microsoft.com/en-us/edge), open up [edge://exten
 
 -   Includes Storybook configured to work with React + TypeScript. Note that it maintains its own `vite.config.js` and `tsconfig.json` files. See example story in `src/components/hello/__tests__/hello.stories.tsx`
 
--   Includes a custom mock for the [webextension-polyfill-ts](https://github.com/Lusito/webextension-polyfill-ts) package in `src/__mocks__`. This allows you to mock any browser APIs used by your extension so you can develop your components inside Storybook.
+-   Includes a custom mock for the [webextension-polyfill](https://github.com/Lusito/webextension-polyfill-ts) package in `src/__mocks__`. This allows you to mock any browser APIs used by your extension so you can develop your components inside Storybook.
 
 **Built with**
 
@@ -90,9 +88,8 @@ In [Microsoft Edge](https://www.microsoft.com/en-us/edge), open up [edge://exten
 -   [Eslint](https://eslint.org/)
 -   [Prettier](https://prettier.io/)
 -   [Vite](https://vitejs.dev/)
--   [Babel](https://babeljs.io/)
 -   [TailwindCSS](https://tailwindcss.com/)
--   [webextension-polyfill](https://github.com/mozilla/webextension-polyfill)
+-   [webextension-polyfill]https://github.com/mozilla/webextension-polyfill)
 
 **Misc. References**
 
