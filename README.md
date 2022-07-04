@@ -3,8 +3,7 @@
 [![GitHub forks](https://img.shields.io/github/stars/DesignString/react-typescript-web-extension-starter?style=social&label=Fork&style=plastic)]()
 [![MIT License](https://img.shields.io/github/license/DesignString/react-typescript-web-extension-starter)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 [![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
-
-[![HitCount](https://hits.dwyl.com/DesignString/https://githubcom/DesignString/react-typescript-web-extension-starter/tree/migration-vitejs.svg?style=flat-square)](http://hits.dwyl.com/DesignString/https://githubcom/DesignString/react-typescript-web-extension-starter/tree/migration-vitejs)
+[![HitCount](https://hits.dwyl.com/DesignString/react-typescript-web-extension-starter.svg?style=flat-square&show=unique)](http://hits.dwyl.com/DesignString/react-typescript-web-extension-starter)
 
 ![React TypeScript Web Extension Starter](https://imgur.com/lYaoyIV)
 
