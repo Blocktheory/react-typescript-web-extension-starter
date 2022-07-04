@@ -4,9 +4,9 @@
   "description": "Web Extension starter kit built with React, TypeScript, Tailwind CSS, EsLint, Prettier ",
   "main": "index.js",
   "scripts": {
-    "build": "vite build",
+    "build": "tsc -p tsconfig.prod.json && vite build",
     "dev": "vite",
-    "test": "jest --config=jest.config.js",
+    "test": "jest",
     "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
     "prettify": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,json}\" ",
     "lint": "yarn prettify && yarn lint:fix ",
@@ -38,6 +38,8 @@
     "@storybook/builder-vite": "^0.1.38",
     "@storybook/react": "^6.5.9",
     "@storybook/testing-library": "^0.0.13",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.2",
     "@types/chrome": "^0.0.124",
     "@types/jest": "^26.0.14",
     "@types/node": "^14.11.8",
@@ -73,5 +75,24 @@
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
+  },
+  "jest": {
+    "clearMocks": true,
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "tsconfig.json"
+      }
+    },
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.ts"
+    ],
+    "moduleNameMapper": {
+        "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+        "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+      },
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "testEnvironment": "jsdom"
   }
 }
